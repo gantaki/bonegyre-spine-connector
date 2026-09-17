@@ -45,11 +45,13 @@ bundled, nothing talks over the network.
   the `SPINE_LAUNCHER` environment variable to the launcher
   (`Spine.com` on Windows, `Spine.app/Contents/MacOS/Spine` on macOS,
   `Spine.sh` on Linux), or make a shortcut that passes `--spine "<path>"`.
-- Several Spine versions installed? The connector lists them, and BoneGyre
-  opens each export in the newest one that matches the export's version —
-  or the one you choose under *Save to → Open in*. If the export is for a
-  newer Spine than any you have, BoneGyre says so before you export and
-  offers the matching version in one click. `--version 4.2.43` forces one.
+- Spine imports data only into the version that exported it, so BoneGyre
+  writes each export for the Spine that will open it: the connector lists
+  your installed versions, BoneGyre opens the export in the newest one of
+  the export's version (or the one you choose under *Save to → Open in*),
+  and downloads a 3.x version through the launcher when you have none. If
+  nothing fits, BoneGyre says so before you export and offers the matching
+  version in one click. `--version 4.2.43` forces one.
 - Run it with `--help` in a terminal for the other options (a different
   folder, a pinned Spine version, build-without-opening, run once).
 
