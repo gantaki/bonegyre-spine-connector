@@ -37,6 +37,21 @@ bundled, nothing talks over the network.
    it is on its way. Export again after every change; the project is
    rebuilt and reopened.
 
+## Merge into your own project
+
+Instead of a separate project beside the export, the effect can land inside
+your `.spine` — merged into your skeleton, animations included:
+
+1. In the connector window, **Add…** your `.spine` (or drop it on the
+   window) and pick the Spine version you edit it in.
+2. In BoneGyre, Export → Save to → **Spine project** → pick it. Your
+   skeleton appears as a Spine Data layer in the viewport.
+3. Close the project in Spine, press **Export**. The connector imports the
+   merged skeleton into your project as a new skeleton and opens it.
+
+Each export adds a fresh skeleton; delete the one you no longer want. The
+connector re-reads the project whenever you save it.
+
 ## Good to know
 
 - Spine takes a few seconds per export — that is Spine starting.
