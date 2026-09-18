@@ -55,9 +55,6 @@ bundled, nothing talks over the network.
 - Spine installed somewhere unusual? The window says *Not found* — pick the
   launcher with *Change…* (`Spine.com` on Windows,
   `Spine.app/Contents/MacOS/Spine` on macOS, `Spine.sh` on Linux).
-- No installer wanted? The same release carries a one-file command-line
-  connector (`BoneGyre-Connector-<os>-<arch>`): double-click it, it does the
-  same job from a console window; `--help` lists its options.
 
 ## Requirements
 
