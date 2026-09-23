@@ -44,8 +44,10 @@ Instead of a separate project beside the export, the effect can land inside
 your `.spine` — merged into your skeleton, animations included:
 
 1. In the connector window, **Add…** your `.spine` (or drop it on the
-   window) — BoneGyre opens with it ready. Pick the Spine version you edit
-   it in if the list shows more than one.
+   window) — BoneGyre opens with it ready. The connector reads which Spine
+   the project is saved in and works in that one, so your project stays in
+   its version (shown under the project's ⟳ ✕ buttons); pick another there
+   only to move the project on purpose.
 2. Your skeleton is already a Spine Data layer in the viewport, and the
    export is already routed back into the project. (For a project added
    earlier: **Use in BoneGyre** beside it, or BoneGyre's Add menu →
