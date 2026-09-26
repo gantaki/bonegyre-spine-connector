@@ -1,4 +1,4 @@
-# BoneGyre Spine connector
+# BoneGyre Connector for Spine
 
 Export from [BoneGyre](https://bonegyre.app) — the effect opens in Spine.
 
@@ -8,6 +8,10 @@ a `.spine` project from the exported skeleton and `images/`, then opens it.
 It runs the Spine you already have installed and licensed; nothing is
 bundled, nothing talks over the network.
 
+Opening exports in Spine comes with BoneGyre's **Solo and Studio** plans
+([pricing](https://bonegyre.app/#pricing)). On Free, BoneGyre still writes
+every export into the folder — you import it in Spine yourself.
+
 ## Setup
 
 1. **Install** the app for your system from the
@@ -15,13 +19,20 @@ bundled, nothing talks over the network.
 
    | System | File |
    |---|---|
-   | Windows | `BoneGyre Connector_<version>_x64-setup.exe` |
-   | macOS, Apple silicon | `BoneGyre Connector_<version>_aarch64.dmg` |
-   | macOS, Intel | `BoneGyre Connector_<version>_x64.dmg` |
+   | Windows | `BoneGyre.Connector_<version>_x64-setup.exe` |
+   | macOS, Apple silicon (*About This Mac* says *Chip: Apple M…*) | `BoneGyre.Connector_<version>_aarch64.dmg` |
+   | macOS, Intel (*Processor: … Intel …*) | `BoneGyre.Connector_<version>_x64.dmg` |
    | Linux | `.AppImage` or `.deb` |
 
-   First run only: Windows SmartScreen says "Windows protected your PC" —
-   click *More info → Run anyway*. On macOS, right-click the app → *Open*.
+   First run only:
+   - **Windows:** SmartScreen says "Windows protected your PC" — click
+     *More info → Run anyway*.
+   - **macOS:** drag the app to Applications and open it. If macOS won't
+     open it, close the message, then go to System Settings → Privacy &
+     Security, scroll down and click **Open Anyway** (it stays there for
+     about an hour after the attempt) and confirm with your password.
+     When it asks to access your Documents folder, click **Allow**: the
+     exports land there.
 
 2. **Open it.** A small window shows the Spine it found (*Spine 4.3.26*
    under its name) and the folder it watches, `Documents/BoneGyre Exports`
@@ -30,7 +41,7 @@ bundled, nothing talks over the network.
    the gear.
 
 3. **In BoneGyre:** Export → Output → **Send to: Spine** → choose
-   `Documents/BoneGyre Exports`. The panel now says *Spine connector running*.
+   `Documents/BoneGyre Exports`. The panel now says *Connector running*.
    The folder is remembered on your account, for every project.
 
 4. **Press Open in Spine** — the export button says what the click will do —
@@ -74,6 +85,11 @@ connector re-reads the project whenever you save it.
   with File → **Import Project**.
 - Spine never reloads an open project. Close the previous one before you
   export again, or open the fresh file from the folder.
+- Clicked *Don't Allow* on macOS? The window says *No access to
+  Documents*. Turn on *Documents Folder* under BoneGyre Connector in
+  System Settings → Privacy & Security → Files and Folders. The connector
+  carries on by itself; if it doesn't, quit it from the menu bar and open
+  it again.
 - Spine installed somewhere unusual? The window says *Spine not found* —
   click it (or the gear) and pick the launcher with *Change…* (`Spine.com`
   on Windows, `Spine.app/Contents/MacOS/Spine` on macOS, `Spine.sh` on
@@ -83,3 +99,8 @@ connector re-reads the project whenever you save it.
 
 - Spine (Essential or Professional), launched and activated on this machine.
 - Chrome or Edge for BoneGyre's folder export.
+
+---
+
+Spine is a trademark of Esoteric Software LLC. BoneGyre is not affiliated
+with Esoteric Software.
